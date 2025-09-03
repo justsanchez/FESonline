@@ -15,71 +15,6 @@ html{
     /*height: 100vh;*/
 }
 
-.switch {
-  display: inline-block;
-  height: 36px;
-  width: 65px;
-  
-  /* Positioning the switch at the top right corner */
-  position: fixed; /* Stays in the same position even when scrolling */
-  top: 70px;       /* Distance from the top of the page */
-  right: 12px;     /* Distance from the right side of the page */
-  z-index: 1000;   /* Ensures it stays above other content */
-}
-
-.switch input {
-  display: none; /* Hides the actual checkbox */
-}
-
-.slider {
-  background-color: #007A8A; /* Default background color when off */
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: background-color 0.4s; /* Smooth transition of background color */
-}
-
-.slider:before {
-  background-color: #F6B93B; /* Inner circle color */
-  bottom: 4px;
-  content: "";
-  height: 29px;
-  left: 4px;
-  position: absolute;
-  width: 29px;
-  
-  /* Transition on the custom transform variable for movement */
-  transition: transform 0.4s ease;
-  
-  /* Default transform, can be overridden by JavaScript */
-  transform: var(--slider-transform, translateX(0));
-}
-
-
-.slider.checked:before {
-  background-color: #E4A300; /* Inner circle color for ECU */
-}
-
-
-/* Rounded slider background */
-.slider.round {
-  border-radius: 34px;
-}
-
-/* Rounded inner circle */
-.slider.round:before {
-  border-radius: 50%;
-}
-
-/* Hide when scrolling down */
-.hide {
-  transform: translateY(-100%);
-  opacity: 0;
-}
-
 
 /*css variable*/
 :root {
@@ -704,6 +639,10 @@ margin: 0 auto;
     margin: 20px 0 0 0;
 }
 
+.fixedAWS {
+  margin: 20px 0 0 -45px; /* negative value from the left to align better */
+}
+
 
 
 
@@ -900,7 +839,6 @@ footer{
     justify-content: center; 
 
   }
-  
 
 
   .logosNAV{
@@ -1380,4 +1318,13 @@ nav a {
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+
+@media screen and (max-width: 1324px) and (min-width: 1096px),
+  screen and (max-width: 799px) {
+  
+  .fixedAWS {
+    margin: 0 auto;
+  }
+
 }
