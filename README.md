@@ -1,5 +1,3 @@
-## Notion Page: [Web Developer Notes](https://wry-onion-674.notion.site/Web-Developer-Notes-11970beb44bd805ca7b1fcbe803f44db)
-
 ### Contributors
 - Alvaro Sanchez (Lead Web Developer)
 - Diego Ruiz Valencia (Web Developer)

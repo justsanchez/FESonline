@@ -1,0 +1,520 @@
+/*Stylesheet for the Meet Our Team Tab*/
+/*Credit for background animation: @designtorch2020 codepen*/
+/*Credit for glass-morphism card: @designtorch2020 codepen*/
+
+
+/*choose a good font for website*/
+
+
+
+
+
+.card-container{
+/*border: solid red;*/
+
+/*shrinks border*/
+
+/*border: solid red;*/
+width: min(100%,1200px);
+/*padding: 20px;*/
+/*min-height: 50vh;*/
+/*background-color: #0E315C;*/
+
+
+display: flex;
+/*grid-gap: 100px;*/
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+margin: 0 auto; /* Horizontal centering */
+
+
+/*a good setting is 50px*/
+gap: 50px; 
+}
+
+
+.card{
+
+/*edit the gap between the pictures*/
+margin: 32px; 
+
+/*you can add a small border here using padding*/
+/*padding: 5px;*/
+
+width: 300px;
+/*background-color: rgb(0,0,0,0.5);*/
+/*box-shadow: 0 5px 20px rgba(0,0,0,0.05);*/
+
+/*this controls the color of the card*/
+background: radial-gradient(
+140% 140% at 0% 0%,
+
+rgba(255, 255, 255, 0.2) 1%,
+rgba(255, 255, 255, 0) 100%
+);
+
+/*these two make it have a glass look appearance*/
+/*border-top: 1px solid #eeeded70;*/
+border-left: 1px solid #eeeded70;
+border-radius: 35px;
+box-shadow: inset -5px -5px 250px rgba(255, 255, 255, 0.02);
+backdrop-filter: blur(30px);
+display: inline-block;
+
+/*cursor: pointer;*/
+transition-property: transform; /* Apply the transition to the transform property */
+transition-duration: 0.3s; /* Adjust the duration as needed */
+transition-timing-function: ease-in-out; /* Use the ease-in-out timing function */
+}
+
+
+.card img{
+/*make the img smaller to fit card*/
+/*margin: 10px 0 0 0;*/
+border-radius: 30px; /* Adjust the value to control the level of smoothness */
+
+max-width: 100%;
+max-height: 100%;
+/*width: auto;*/
+/*height: auto;*/
+
+/*temporary, just find a specific format size and stick with it */
+/*this is what makes the img stretched alittle*/
+width: 400px; /* Set the width to 300 pixels */
+height: 350px; /* Set the height to 200 pixels */
+}
+
+.card-info{
+padding:0;
+margin: 0;
+text-align: center;
+display: flex;
+flex-direction: column;
+margin-bottom: 10px; /* Adjust this value to control the spacing between items */
+
+
+}
+
+.card-info h6{
+margin: 3px 0 0 0;
+/*margin-bottom: 3px;*/
+font-size: 16px;
+font-weight: 700;
+/*Raleway*/
+font-family: sans-serif;
+/*can take off*/
+text-transform: capitalize;
+}
+
+.card-info span{
+
+margin-bottom: 5px;
+color: #4169E1;
+font-size: 13px;
+font-weight: 400;
+/*Poppins*/
+font-family: sans-serif;
+
+}
+
+/*.about-text {*/
+/*    padding: 25px;*/
+
+/*}*/
+
+.card-info p {
+display: inline;
+position: relative;
+color: white; /* Change the initial text color as needed */
+text-decoration: none;
+border-bottom: 2px solid blue; /* can add a transparent to make it invisible */
+transition: border-color 0.3s; /* Add a smooth transition for the border color */
+margin: 1000px 0; /* Add margin to create space above and below the text */
+
+}
+
+.card-info p:hover {
+
+border-color: #afd8e9; /* Change the border color to green on hover */
+}
+
+
+/*just to make the cards hover only in the team page*/
+.card:hover {
+
+transform: translate(0, -0.45%);
+
+}
+
+/*editing the modal pop-up here*/
+.imgSizingonCard {
+/*can modify the padding to make the nav bigger or smaller*/
+/*padding: 9px;*/
+/*width: 100%;*/
+/*max-height: 20vh;*/
+padding: 0;
+/*to fully cover the space*/
+margin: 0;
+/*margin: -20px 0 0 -20px;*/
+
+max-width: 100%;
+max-height: 100%;
+/*width: auto;*/
+/*height: auto;*/
+
+/*temporary, just find a specific format size and stick with it */
+/*this is what makes the img stretched alittle*/
+width: 100%; /* Set the width to 300 pixels */
+height: 100%; /* Set the height to 200 pixels */
+}
+
+/*.bottom-media{*/
+/*    position: absolute;*/
+/*    bottom: 2px;*/
+/*    width: 100%; !* Optionally, to stretch it to the full width of the container *!*/
+/*    max-width: 405px;*/
+/*}*/
+
+
+
+
+
+/*make it say, "click anywhere to exit" */
+.modalstyles {
+/*takes the borders away*/
+padding: 0;
+display: grid;
+grid-template-columns: 1fr 1fr;
+/*configure the size of the boxes here*/
+/*have to change this whenever the aspect ratio shrinks*/
+max-width: 890px;
+top: -12px;
+/*
+#2e3a8e (decent)
+#1c2464 (okay)
+#111637
+#0c0f24*/
+background: linear-gradient(to bottom, #001f3f, #0c0f24);
+
+
+
+}
+
+.modalcontent {
+/*position: relative;*/
+/*grid is kinda redundant*/
+display: grid;
+/* The line below will create as many rows as needed based on the content */
+grid-template-rows: repeat(auto-fill, minmax(min-content, max-content));
+/*border: solid red;*/
+color: whitesmoke;
+padding: 20px;
+}
+
+.showPhone{
+  display: none;
+
+}
+
+.iconStyle{
+    /*border: solid red;*/
+  margin: 10px 32px 0 0;
+  /*width: 50%;*/
+  /*border: 3px solid green;*/
+  /*padding: 10px;*/
+    text-decoration: none;
+
+
+}
+
+
+
+/*.about-text:hover::after {*/
+/*  background: white;*/
+/*}*/
+
+
+
+
+.closemodal::before,
+.closemodal::after {
+background: white;
+}
+
+.titleModal{
+  
+padding: 22px 0 0 0;
+margin: 0;
+
+}
+
+.roleModal{
+font-size: 16.9px;
+font-weight: 300;
+padding: 0;
+margin: 0;
+}
+
+.textModalContent{
+padding: 0;
+margin: 0;
+}
+
+.borderForModal{
+border-top: 1px solid grey;
+}
+
+/*.about-text {*/
+/*    !*padding: 1px;*!*/
+/*    border: solid red;*/
+
+/*  display: inline;*/
+/*  position: relative;*/
+/*  color: white;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.about-text::after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  left: 0;*/
+/*  bottom: 16px; !* Adjust this value to control the distance of the underline *!*/
+/*  width: 100%;*/
+/*  height: 2px; !* Adjust this value to control the underline thickness *!*/
+/*  background: blue;*/
+/*  transition: background 0.3s; !* Add a smooth transition for the background color *!*/
+/*}*/
+
+/*.about-text:hover::after {*/
+/*  background: white;*/
+/*}*/
+
+
+
+/*
+possible grid template
+(for e-board)
+https://www.youtube.com/watch?v=78aWIBhVqoU
+(more grid templates)
+https://www.youtube.com/watch?v=rnhoY5Cdmy0
+*/
+
+
+/*Future problems:
+- figure out how to have them in the exact same size */
+
+/*Animated background*/
+
+/*.structure::before{*/
+/*  content: "";*/
+/*  width: 50%;*/
+/*  height: 50%;*/
+/*  border-radius: 100%;*/
+/*  box-shadow: 0 -150px 400px #000044;*/
+/*  position: fixed;*/
+/*  bottom: -50%;*/
+/*  left: 25%;*/
+/*  z-index: -1;*/
+/*}*/
+
+/*.structure::after{*/
+/*  content: "";*/
+/*  width: 50%;*/
+/*  height: 50%;*/
+/*  border-radius: 100%;*/
+/*  box-shadow: 0 150px 300px #000044;*/
+/*  position: fixed;*/
+/*  top: -50%;*/
+/*  left: 25%;*/
+/*  z-index: -1;*/
+/*  animation: animate_1 10s infinite;*/
+/*}*/
+
+/*.container::before{*/
+/*  content: "";*/
+/*  width: 50%;*/
+/*  height: 100%;*/
+/*  border-radius: 100%;*/
+/*  box-shadow: 0 0 500px 450px #000000;*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  left: -50%;*/
+/*  z-index: -1;*/
+/*  animation: animate_2 10s infinite;*/
+/*}*/
+
+/*.container::after{*/
+/*  content: "";*/
+/*  width: 50%;*/
+/*  height: 100%;*/
+/*  border-radius: 100%;*/
+/*  box-shadow: 0 0 500px 450px #000000;*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  right: -50%;*/
+/*  z-index: -1;*/
+/*  animation: animate_3 10s infinite;*/
+/*}*/
+
+/*!* Animation *!*/
+/*@keyframes animate_1{*/
+/*  25%{*/
+/*    box-shadow: 0 150px 300px #000044;*/
+/*  }*/
+/*  50%{*/
+/*    box-shadow: 0 150px 300px #000000;*/
+/*  }*/
+/*  75%{*/
+/*    box-shadow: 0 150px 300px #000000;*/
+/*  }*/
+/*  100%{*/
+/*    box-shadow: 0 150px 300px #000044;*/
+/*  }*/
+/*}*/
+
+/*@keyframes animate_2{*/
+/*  25%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*  50%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*  75%{*/
+/*    box-shadow: 0 0 500px 450px #000044;*/
+/*  }*/
+/*  100%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*}*/
+
+/*@keyframes animate_3{*/
+/*  25%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*  50%{*/
+/*    box-shadow: 0 0 500px 450px #000044;*/
+/*  }*/
+/*  75%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*  100%{*/
+/*    box-shadow: 0 0 500px 450px #000000;*/
+/*  }*/
+/*}*/
+
+/*end of Animated background settings*/
+
+
+/*first shrink if needed*/
+/*@media screen and (max-width: 1180px) {*/
+
+/*}*/
+
+/*second shrink*/
+
+/*possible solution when restricting scrolling*/
+/*restrict based on how long the modal is (if that possible)*/
+@media screen and (max-width: 886px) {
+
+
+
+
+
+  .modaloverlay {
+  background: rgba(0, 0, 0, 0.9);
+
+
+
+
+}
+
+.modalstyles {
+grid-template-columns: 1fr;
+top: -1px;
+/*have to change this whenever the aspect ratio shrinks*/
+max-width: 490px;
+/*border: solid red 1px;*/
+/*background: rgba(0, 0, 0, 0); !* Fully transparent red background *!*/
+
+}
+
+/*make the grid values differnt, make the second bigger than the first*/
+/*another possible solution*/
+.modalcontent{
+      /*border: solid red 1px;*/
+font-size: 14px;
+position: fixed;
+
+/*  this is the main focus in being able to use the website on mobile*/
+top: 388px;
+max-width: 490px;
+background: linear-gradient(to bottom, #001f3f, #0c0f24);
+line-height: 1.3;
+
+}
+
+
+
+
+
+
+.imgSizingonCard {
+padding: 0;
+margin: 0;
+
+
+max-width: 100%;
+max-height: 100%;
+
+/*temporary, just find a specific format size and stick with it */
+/*this is what makes the img stretched alittle*/
+width: 100%; /* Set the width to 300 pixels */
+height: 100%; /* Set the height to 200 pixels */
+}
+
+}
+
+/*move whatever you do here to the 500px quer*/
+@media screen and (max-width: 886px) {
+  .showPhone{
+    display: block;
+    padding: 5px 0 7px 0;
+
+  }
+
+  .showDesktop{
+    display: none;
+  }
+
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+
+
+
+
+  .modalstyles {
+    /*border: solid red;*/
+    width: 80%;
+  }
+
+/*can make it bigger */
+/*  for it to not be so crammed:
+  -make it as when the screen is smaller just show a a summerized paragraph
+  */
+
+.modalcontent{
+  width: 80%;
+  font-size: 12px;
+
+
+
+}
+
+
+}

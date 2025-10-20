@@ -2,28 +2,33 @@
 window.addEventListener("load", () => {
   const loadingOverlay = document.getElementById("loading-overlay");
   loadingOverlay.style.display = "none";
-  // always load in as false
-  checkbox.checked=false;
-});
+  // always load in as true
+  checkbox.checked=true;
 
-// set up local storage
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   const checkbox = document.getElementById("checkbox");
   const slider = document.querySelector(".slider");
   const switchNavigation = document.querySelector(".switchNavigation");
 
+  // Check if the checkbox is checked initially and apply styles
+  if (checkbox.checked) {
+    slider.style.backgroundColor = "#5C5DAF"; // Set to checked color (e.g., green)
+    slider.style.setProperty("--slider-transform", "translateX(26px)"); // Move the slider thumb to the right
+  }
 
-  checkbox.addEventListener("change", function() {
+  // Toggle styles when the checkbox changes
+  checkbox.addEventListener("change", () => {
     if (checkbox.checked) {
-      // If the checkbox is checked (ON state)
-      slider.style.backgroundColor = "#5C5DAF"; // Green background
-      slider.classList.add("checked"); // Change inner circle color
+      // slider.style.backgroundColor = "black"; // ! 
       slider.style.setProperty("--slider-transform", "translateX(26px)");
       
-      // Read the switchNavigation text when checked
+    } else {
+      slider.style.backgroundColor = "#007A8A";
+      slider.style.setProperty("--slider-transform", "translateX(0)");
       const navText = switchNavigation.textContent;
-      console.log(`IF Navigating to: ${navText}`);
+      console.log(`Navigating to: ${navText}`);
       // navigate to navText
 
       // have a .3 sec delay
@@ -31,25 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
         // navigate to navText
         window.location.href = navText;
         }, 300);
-      // Perform navigation or any other action with navText
-    } else {
-      // If the checkbox is unchecked (OFF state)
-      slider.style.backgroundColor = "#ccc"; // Gray background
-      slider.classList.remove("checked"); // Revert inner circle color
-      slider.style.setProperty("--slider-transform", "translateX(0)");
-      
-      // Read the switchNavigation text when unchecked
-      const navText = switchNavigation.textContent;
-      console.log(`ELSE Navigating to: ${navText}`);
-
-      // TODO: it just turns grey, not part of the js
-      // ! Listen
-      // ? how
-      
-      // Perform navigation or any other action with navText
     }
   });
 });
+
 //
 // //pop up window
 // const openModalButtons= document.querySelectorAll('[data-modal-target]');
@@ -233,26 +223,6 @@ document.addEventListener("click", function (event) {
 });
 
 // add a function that counts how many elements have the date class
-
-// Function to close the modal
-function closeModal(modal) {
-  if (modal) {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
-  };
-};
-
-// Keydown Event Listener
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape') {
-    const openModal = document.querySelector('.modaloverlay[style*="display: block"]'); // Find open modal
-    closeModal(openModal); // Close the found modal
-  };
-});
-
-
-
-
 
 // leave last, its prone to mess up some code
 

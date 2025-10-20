@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- http://127.0.0.1:3000/ -->
+    
+    <!-- 
+      Webiste was designed and developed by:
+
+      Alvaro Sanchez - Lead Web Developer 
+
+
+      Contributions: 
+      Diego Ruiz Valencia - Web Developer
+      Jovani Rivera - Web Developer (In training)
+      Javi Morales (Helped fill in words for the home page)
+     -->
+
+
+
+    <!--HTML CHECKER-->
+    <!--https://validator.w3.org/nu/#textarea-->
+
+    <!--add this link to all the insta logos-->
+    <!--instagram://user?username=futurosenstem&igshid=NzZlODBkYWE4Ng==-->
+
+    <!-- Sandbox: New Sandbox -->
+    <!--The FES icon on the tab-->
+    <link
+      rel="shortcut FES icon"
+      href="https://media.licdn.com/dms/image/C4E22AQFlRMxTn3Ja0w/feedshare-shrink_800/0/1675353383238?e=2147483647&v=beta&t=w9iUPozTQoxDA_PcZCB78qmuq85zBKxU5oeGQSJxeWQ"
+    />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Futuros En STEM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--Dont forget google fonts!!!!!-->
+    <!--     can link it here-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
+    />
+  </head>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <body>
+    <div id="loading-overlay">
+      <div class="logo-tab">
+        <img
+          src="images/FESWEBLogo(croppedKeep).PNG"
+          alt="Futuros En Stem Logo"
+        />
+      </div>
+      <br />
+      <div class="spinner"></div>
+    </div>
+
+    <!--can make it fixed (as its stays in position when scrolling)-->
+    <!--https://www.youtube.com/watch?v=zuAmsj2EN54-->
+
+    <!--this is the one im going to use-->
+    <header>
+      <div class="logo-tab">
+        <a href="/ecu">
+          <img
+            id="main_logo"
+            src="images/FESWEBLogo(croppedKeep).PNG"
+            alt="Futuros En Stem Logo"
+          />
+        </a>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <nav>
+        <ul>
+          <li><a href="/ecu">Home</a></li>
+          <li><a href="/ecu/team">Meet Our Team</a></li>
+          <li><a href="/ecu/mentors">Mentors</a></li>
+          <li><a href="/ecu/events">Events</a></li>
+          <!--it can just be a pop up-->
+          <li>
+            <a
+              href="mailto:javiermduarte70@gmail.com,av9401@uncw.edu,ajs1696@uncw.edu"
+              >Contact Us!</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="logosNAV">
+        <div align="center" class="socialbtns">
+          <ul>
+            <!--<li><a href="#" class="fa fa-lg fa-facebook"></a></li>-->
+            <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+            <li>
+              <a
+                class="instaIcon fa fa-lg fa-instagram"
+                href="https://instagram.com/futurosenstem?igshid=MzRlODBiNWFlZA=="
+              ></a>
+            </li>
+            <li>
+              <a
+                class="linkedinIcon fa fa-lg fa-linkedin"
+                href="https://www.linkedin.com/company/futuros-en-stem/"
+              ></a>
+            </li>
+            <li>
+              <a
+              href="https://web.groupme.com/join_group/98888896/5al8TPOE"
+              ><img 
+              style="max-width: 25px;
+              margin-bottom: -8.5px;"
+              src="images/PEO-groupme-0.svg.png" alt="groupme icon"></a>
+            </li>
+            <!--<li><a href="#" class="fa fa-lg fa-youtube"></a></li>-->
+          </ul>
+        </div>
+      </div>
+
+      <!--the "for=" will look for a id not a class-->
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+    </header>
+
+    <!--possible solution!, so the nav bar wouldnt always be on top
+just include it the grid column-->
+
+    <!--<p> Have the logo on the top left and on the bottem of it to have the words that change every certain sec</p>-->
+    <!--<p> like on the INSTA vid</p>-->
+
+    <!--to have a solid background color with some blurred circles
+use figma source: https://youtu.be/hd8IAtXS-Kw-->
+
+    <!--the classes structure and container are crucial-->
+    <div class="structure">
+      <div class="container">
+        <label class="switch" for="checkbox">
+          <input type="checkbox" id="checkbox" checked/>
+          <p class="switchNavigation" hidden>/</p>
+          <div class="slider round"></div>
+        </label>
+      
+       
+        <div class="video-container">
+          <video playsinline autoplay muted loop>
+            <source src="video/beachVideo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="centered-text">
+            <p>
+              Empowering Latinos in
+              <span style="color: #841cd4; font-size: 130%; font-weight: bold"
+                >STEM</span
+              >
+            </p>
+          </div>
+        </div>
+
+      
+
+        <!--doable-->
+        <!--    <div class="content-block">-->
+
+        <div id="lure">
+          <h3>
+            We are a passionate team of dedicated individuals, united by a
+            common goal: to empower and uplift future leaders in STEM
+          </h3>
+        </div>
+
+        <div class="call-to-action">
+          <div class="text">
+            <h3>
+              Let's empower diversity in STEM with us and drive progress
+              together
+            </h3>
+            <p>
+              Futuros En Stem dedicated to supporting and empowering Latinos
+              professionals in STEM. Through mentorship, safe spaces, advocacy,
+              and outreach, we're building a community that celebrates
+              diversity, cultural heritage, and innovation
+            </p>
+          </div>
+          <div class="text2">
+            <h4>
+              <h2>What we do here in Futuros En STEM</h2>
+              Through hands-on learning, mentorship, and impactful projects, we
+              ensure you stay at the forefront of technology. Follow us on
+              Instagram @futurosenstem for weekly updates and learn more about
+              our community!
+            </h4>
+          </div>
+        </div>
+        <div></div>
+
+        <!--    </div>-->
+      </div>
+      <div class="contentSeparater" style="margin-top: 20px;">
+      </div>
+      <div class="joinConvoCTA">
+
+        <h2>
+          Join the conversation, stay better connected!
+        </h2>
+      
+      </div>
+    <!-- Show WP in desktop and DP in mobile -->
+    <div class="microsoftTeamsLayout">
+      
+      
+
+    <div class="link-container">
+      <a href="https://teams.microsoft.com/l/team/19%3AtDNqbWIhsxpk3GhusIAQEWJAUzKDCyWUBqW-_SEXFcA1%40thread.tacv2/conversations?groupId=344056f5-173c-4bc5-8a6b-cfaff4989a81&tenantId=22136781-9753-4c75-af28-68a078871ebf">
+          <img class="imgSizing linkTreeLinksImgs" src="images/Microsoft-Teams(DP).png" alt="Futuros En Stem">
+          <div class="tooltipMicrosoftTeams">Click to join our Microsoft Teams</div>
+        </a>
+    </div>
+      
+
+    <div class="link-container">
+      <a href="https://web.groupme.com/join_group/98888896/5al8TPOE">
+        <img class="imgSizing linkTreeLinksImgs" src="https://i0.wp.com/www.alphr.com/wp-content/uploads/2023/09/Are-GroupMe-Polls-Anonymous.webp?fit=1200%2C666&ssl=1" alt="Futuros En Stem">
+        <div class="tooltipGroupMe">Click to join our GroupMe</div>
+      </a>
+      
+  </div>
+    </div>
+
+    
+
+
+      <div>
+        <h2 class="pt-sans-narrow">Special thanks to our Collaborators!</h2>
+      </div>
+
+      <!--the end of the structure is here-->
+    </div>
+
+    <!--try aspect ratio-->
+    <div class="companys">
+      <!--previous imgs for logos -->
+      <!-- <img class="smooth-hover" src="images/Ncino_logo.svg.png" alt="ncino logo">
+            <img class="smooth-hover" src="images/lenovo.png" alt="lenovo logo">
+            <img class="smooth-hover" src="images/megaCorp.jpeg" alt="megaCorp logo">
+            <img class="smooth-hover" src="images/forvis.png" alt="forvis logo"> -->
+
+      <!-- EDIT HERE !! -->
+      <!-- FIX THE LOGO ALIGNMENT, THEY SHOULD BE THE CENTERED -->
+      <!--new img for logos -->
+
+      <img class="smooth-hover" src="images/CENTROLOGO.png" alt="centro logo" />
+      <img
+        class="smooth-hover"
+        src="images/ncinoFixed-removebg-preview.png"
+        alt="ncino logo"
+      />
+      <!--            <img  class="smooth-hover fixedlenovo" src="images/lenovoFixed.png" alt="lenovo logo">-->
+      <img
+        class="smooth-hover fixedMegaCoprp"
+        src="images/MegaCorp_Logo_Navy_1594041337.webp"
+        alt="megaCorp logo"
+      />
+    </div>
+
+    <div>
+      <h2 class="pt-sans-narrow">
+        Frequently Asked <span style="color: #b969f6">Questions</span>
+      </h2>
+    </div>
+
+    <ul class="checkbox">
+      <li class="transparent-border">
+        <h3>Why Futuros En STEM?</h3>
+        <input type="checkbox" />
+        <article>
+          <div>
+            FES is dedicated to preparing students for future STEM careers.
+            Whether you're interested in science, technology, engineering, or
+            any other STEM oriented careers, our programs provide the skills,
+            networking and knowledge needed to prepare you for post college.
+          </div>
+        </article>
+        <i>&#94;</i>
+      </li>
+      <li class="transparent-border">
+        <!--Why FES?-->
+        <!--Try to look for a good font as well-->
+        <h3>How do I Join FES?</h3>
+        <input type="checkbox" />
+        <article>
+          <div class="answerFont">
+            Start by following us on Instagram @futurosenstem. Our Instagram
+            page includes updates, event announcements, and Collaborators from
+            Futuros En STEM.
+          </div>
+        </article>
+        <i>&#94;</i>
+      </li>
+      <li class="transparent-border">
+        <h3>Need help getting an internship?</h3>
+        <input type="checkbox" />
+        <article>
+          <div>
+            FES provides guidance on resumes, interviews, and developing a
+            portfolio to impress your future employers. We offer resources and
+            workshops to help you present your skills and experiences
+            effectively to potential future employers.
+          </div>
+        </article>
+        <i>&#94;</i>
+      </li>
+      <li class="transparent-border">
+        <h3>How can I get my resume reviewed?</h3>
+        <input type="checkbox" />
+        <article>
+          <div>
+            Stay informed about our mentorship sessions by following us on
+            Instagram @futurosenstem. We regularly post updates, including dates
+            and details about upcoming La Sala sessions. Mark your calendar, and
+            don't miss the opportunity to get personalized feedback on your
+            resume.
+          </div>
+        </article>
+        <i>&#94;</i>
+      </li>
+    </ul>
+  </body>
+
+  <footer>
+    <div id="logosFooter">
+      <div class="socialbtns">
+        <ul>
+          <!--<li><a href="#" class="fa fa-lg fa-facebook"></a></li>-->
+          <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+          <li>
+            <a
+              id="instaIconFooter"
+              href="instagram://user?username=futurosenstem&igshid=NzZlODBkYWE4Ng=="
+              class="fa fa-lg fa-instagram"
+            ></a>
+          </li>
+          <li>
+            <a
+              id="linkedinIconFooter"
+              href="https://www.linkedin.com/company/futuros-en-stem/"
+              class="fa fa-lg fa-linkedin"
+            ></a>
+          </li>
+          <!--<li><a href="#" class="fa fa-lg fa-youtube"></a></li>-->
+        </ul>
+      </div>
+    </div>
+
+    <span style="color: #393e46">
+      &copy;Copyright 2023 <br />
+      All rights reserved
+    </span>
+    <script src="script.js"></script>
+  </footer>
+</html>

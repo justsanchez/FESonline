@@ -1,0 +1,319 @@
+/*file can be deleted*/
+
+/*Home Page CSS (first attempt)*/
+/*for the html header below
+
+    <header class="nav-header">
+        <a href="#">
+        <div class="logo-tab">
+            <img id="main_logo" src="images/FESWEBLogo(croppedKeep).PNG" alt="Futuros En Stem Logo">
+        </div>
+        </a>
+        <nav class="nav-tabs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Meet Our Team</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Join Us!</a></li>
+            </ul>
+        </nav>
+    </header>
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /*font color*/
+    color: white;
+    /*width to cover the whole page*/
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+#mainVideo{
+    width: 100%;
+}
+
+/*video adjustments*/
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-height: 100vh;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .centered-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-125%, -50%);
+            text-align: center;
+            color: white;
+            font-size: 250%;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+
+
+/*can have more than one colors in the linear gradient*/
+
+body{
+    margin: 0;
+    /*can change the style of the fonts here*/
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+        background-image: linear-gradient(
+            to right,
+            /*#121212,*/
+            #111111,
+            #000044
+
+    );
+}
+
+/*when styling the footer its suggested to put it as the last color above*/
+/*ex. #000044 */
+
+
+/* Header styles */
+.nav-header {
+    width: 100%;
+    position: fixed;
+    z-index: 100; /* Set a high z-index to ensure it's above other content */
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Logo styles */
+.logo-tab img {
+    padding: 5px;
+    max-width: 180px;
+    height: auto;
+}
+
+/* Navigation styles */
+.nav-tabs ul {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Align items vertically within the ul */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-tabs li {
+    margin: 0 15px;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.nav-tabs li {
+    margin: 0 10px 0 40px;
+
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*effects when the cursor key is hovered over*/
+.nav-tabs a:hover {
+    color: #4169E1;
+}
+
+footer{
+    /*doesnt need to be black*/
+    background-color: black;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1100px) {
+    .nav-header {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-tabs {
+        display: none;
+    }
+
+    .logo-tab {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
+
+/*codepen code for hamburger*/
+
+
+
+/*a {*/
+/*  color: #fff;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.p-menu1{*/
+/*   height: 100%;*/
+/*}*/
+
+
+
+
+/* Hamburger */
+
+
+/*a {*/
+/*    border: red;*/
+/*    color: #fff;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.p-menu1{*/
+/*    display: none;*/
+/*   height: 100%;*/
+/*}*/
+
+
+
+
+/*!* Hamburger *!*/
+/*.hamburger1 {*/
+/*    height: 45px;*/
+/*    margin: 10px;*/
+/*    display: -ms-grid;*/
+/*    display: grid;*/
+/*    grid-template-rows: repeat(3, 1fr);*/
+/*    justify-items: right;*/
+/*    z-index: 120;*/
+/*}*/
+
+/*.hamburger1 div {*/
+/*    background-color: rgb(61, 61, 61);*/
+/*    position: relative;*/
+/*    width: 40px;*/
+/*    height: 5px;*/
+/*    margin-top: 7px;*/
+/*    transition: all 0.2s ease-in-out;*/
+/*}*/
+
+/*#toggle1 {*/
+
+/*    display: none;*/
+/*}*/
+
+/*#toggle1:checked + .hamburger1 .top {*/
+/*    background-color: blue; !* Set your desired background color *!*/
+/*}*/
+
+/*#toggle1:checked + .hamburger1 .meat {*/
+/*    background-color: blue; !* Set your desired background color *!*/
+
+/*}*/
+
+/*#toggle1:checked + .hamburger1 .bottom {*/
+/*    background-color: blue; !* Set your desired background color *!*/
+
+/*}*/
+
+/*#toggle1:checked ~ .menu1 {*/
+/*    !*this makes it transparent, you can take it off if you dont want the lag*!*/
+/*    width: 100%;*/
+/*    height: 390px;*/
+/*    position: fixed;*/
+/*}*/
+
+
+/*!* Menu *!*/
+/*.menu1 {*/
+/*    background-color: rgba(0, 0, 0, 0.8); !* Set your desired transparency value (0 to 1) *!*/
+/*    margin: 0;*/
+/*    display: -ms-grid;*/
+/*    display: grid;*/
+/*    grid-template-rows: 1fr repeat(4, 0.5fr);*/
+/*    grid-row-gap: 25px;*/
+/*    padding: 0;*/
+/*    list-style: none;*/
+/*    clear: both;*/
+/*    width: auto;*/
+/*    text-align: center;*/
+/*    height: 0px;*/
+/*    overflow: hidden;*/
+/*    transition: height .4s ease;*/
+/*    z-index: 120;*/
+/*    -webkit-transition: all 0.3s ease;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*.menu1 a:first-child {*/
+/*  margin-top: 40px;*/
+/*}*/
+
+/*.menu1 a:last-child {*/
+/*  margin-bottom: 40px;*/
+/*}*/
+
+/*.link1 {*/
+/*  width: 100%;*/
+/*  margin: 0;*/
+/*  padding: 10px 0;*/
+/*  font: 700 20px 'Oswald', sans-serif;*/
+/*}*/
+
+/*.link1:hover {*/
+/*  background-color: #fff;*/
+/*  color: rgb(61, 61, 61);*/
+/*  -webkit-transition: all 0.3s ease;*/
+/*  transition: all 0.3s ease;*/
+/*}*/
+
+
+
+/*!* Media query for responsiveness *!*/
+/*@media screen and (max-width: 1100px) {*/
+/* .p-menu1{*/
+/*     display: block;*/
+/* }*/
+/*}*/
+
+
+

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+      Webiste was designed and developed by:
+
+      Alvaro Sanchez - Lead Web Developer 
+
+
+      Contributions: 
+      Diego Ruiz Valencia - Web Developer
+      Jovani Rivera - Web Developer (In training)
+      Javi Morales (Helped fill in words for the home page)
+     -->
+<head>
+    <!--The FES icon on the tab-->
+    <link rel="shortcut FES icon"
+        href="https://media.licdn.com/dms/image/C4E22AQFlRMxTn3Ja0w/feedshare-shrink_800/0/1675353383238?e=2147483647&v=beta&t=w9iUPozTQoxDA_PcZCB78qmuq85zBKxU5oeGQSJxeWQ">
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <!--unique stylesheet for page, for less of a clutter-->
+
+    <link rel="stylesheet" href="styles/teamStylesheet.css">
+
+    <title>Futuros En STEM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Dont forget google fonts!!!!!-->
+    <!--     can link it here-->
+
+
+    <!--    font awesome-->
+    <!--    <link rel="stylesheet"-->
+    <!--          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"-->
+    <!--          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="-->
+    <!--          crossorigin="anonymous"-->
+    <!--          referrerpolicy="no-referrer" />-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+</head>
+
+<body>
+
+
+
+    <div id="loading-overlay">
+        <div class="logo-tab">
+            <img src="images/FESWEBLogo(croppedKeep).PNG" alt="Futuros En Stem Logo">
+        </div>
+        <br>
+        <div class="spinner"></div>
+    </div>
+
+
+
+    <!--can make it fixed (as its stays in position when scrolling)-->
+    <!--https://www.youtube.com/watch?v=zuAmsj2EN54-->
+
+
+
+
+    <!--this is the one im going to use-->
+    <header>
+        <div class="logo-tab">
+            <a href="/">
+                <img id="main_logo" src="images/FESWEBLogo(croppedKeep).PNG" alt="Futuros En Stem Logo">
+            </a>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="/ecu">Home</a></li>
+                <li><a href="/ecu/team">Meet Our Team</a></li>
+                <li><a href="/ecu/mentors">Mentors</a></li>
+                <li><a href="/ecu/events">Events</a></li>
+                <!--it can just be a pop up-->
+                <li><a href="mailto:javiermduarte70@gmail.com,av9401@uncw.edu,ajs1696@uncw.edu">Contact Us!</a></li>
+            </ul>
+        </nav>
+        <div class="logosNAV">
+            <div align="center" class="socialbtns">
+                <ul>
+                    <!--<li><a href="#" class="fa fa-lg fa-facebook"></a></li>-->
+                    <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                    <li><a class="instaIcon fa fa-lg fa-instagram"
+                            href="https://www.instagram.com/futurosenstem?igsh=MWRxeXB6czVrdTh1ZA%3D%3D&utm_source=qr"></a>
+                    </li>
+                    <li><a class="linkedinIcon fa fa-lg fa-linkedin"
+                            href="https://www.linkedin.com/company/futuros-en-stem/"></a></li>
+                    <li>
+                        <a
+                        href="https://web.groupme.com/join_group/98888896/5al8TPOE"
+                        ><img 
+                        style="max-width: 25px;
+                        margin-bottom: -8.5px;"
+                        src="images/PEO-groupme-0.svg.png" alt="groupme icon"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!--the "for=" will look for a id not a class-->
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+
+    </header>
+
+
+
+
+    <div class="structure">
+
+
+
+        <div class="container">
+            <label class="switch" for="checkbox">
+                <input type="checkbox" id="checkbox" checked/>
+                <p class="switchNavigation" hidden>/team.html</p>
+                <div class="slider round"></div>
+            </label>
+
+            <img class="imgSizing" src="images/uncwPicture(U).jpg" loading="eager" alt="Hoggard Hall UNCW">
+
+
+            <h4 class="title">Meet Our <span style="color: #4169E1">Team</span></h4>
+
+
+
+            <!--modals-->
+            <div id="javiPOPUP" class="modaloverlay">
+                <div class="modalstyles">
+                    <img class="imgSizingonCard" src="images/FJmorales.jpg" alt="Co President Javier Picture"
+                        loading="lazy">
+                    <a class="closemodal" href="#javiPOPUP"></a>
+                    <div class="modalcontent">
+                        <div>
+                            <h2 class="titleModal">Javier Morales</h2>
+                            <p class="roleModal">Co President</p>
+                        </div>
+
+                        <div class="showDesktop">
+                            Originally from Durham, North Carolina, with Mexican roots. He is a devoted and
+                            service-oriented individual aspiring to make a lasting impact through technology. Pursuing a
+                            major in computer science with a software engineering concentration and a minor in
+                            cybersecurity, he aims for a career in full-stack development. His leadership and passion
+                            for growth are evident in roles like co-founder of 'Futuros en STEM' and co-president of the
+                            Hispanic Latinx Student Union. Javier, a recipient of the LSAMP scholarship, is driving
+                            innovation at the intersection of language and technology, showcasing commitment to
+                            excellence, leadership, and knowledge advancement.
+                        </div>
+                        <div class="showPhone">
+
+                            Driven by tech and change, Durham-rooted Javier leverages his computer science and
+                            cybersecurity background to innovate at the language-tech intersection. Aspiring for a
+                            full-stack development career, he co-founded 'Futuros en STEM' and co-presides the Hispanic
+                            Latinx Student Union, demonstrating leadership and a passion for impact. A recipient of the
+                            LSAMP scholarship, his dedication extends beyond academics, with hobbies like music and
+                            photography.
+                        </div>
+                        <div class="showDesktop">
+                            <!--                Interesting fact:-->
+                            Javier, a pet dad to a white German pup, enjoys playing guitar and piano, and tinkering with
+                            his camera in leisure
+                        </div>
+
+
+                        <div class="logos borderForModal ">
+                            <!--                  maybe will need to put the icons to be absolute-->
+                            <div class="socialbtns">
+                                <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                                <!--    <a class="mailIconModal fa fa-envelope-o fa-2x" href="https://instagram.com/futurosenstem?igshid=MzRlODBiNWFlZA=="></a>-->
+                                <a class="linkedinIconModal fa fa-lg fa-linkedin iconStyle"
+                                    href="https://www.linkedin.com/in/jmrles/"></a>
+                                <a class="fa fa-lg fa-envelope iconStyle" href="mailto:javiermduarte70@gmail.com"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="aprilPOPUP" class="modaloverlay">
+                <div class="modalstyles">
+                    <img class="imgSizingonCard" src="images/Avilleda.jpg" alt="Co President Abril Picture"
+                        loading="lazy">
+                    <a class="closemodal" href="#aprilPOPUP"></a>
+                    <div class="modalcontent">
+                        <div>
+                            <h2 class="titleModal">April Villeda</h2>
+                            <p class="roleModal">Co President</p>
+                        </div>
+
+                        <div>
+                            Originally from La Grange, NC, with Mexican and Guatemalan heritage, I'm pursuing a major in
+                            computer science, specializing in software engineering and artificial intelligence. As a
+                            recipient of the Rosenberg Scholarship and a member of the Honors College, I aspire to bring
+                            my skills to NASA in the future.
+                        </div>
+                        <!--                <div>-->
+                        <!--&lt;!&ndash;                Interesting fact:&ndash;&gt;-->
+                        <!--                </div>-->
+
+                        <div class="logos borderForModal">
+                            <!--                  maybe will need to put the icons to be absolute-->
+                            <div class="socialbtns">
+                                <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                                <!--    <a class="mailIconModal fa fa-envelope-o fa-2x" href="https://instagram.com/futurosenstem?igshid=MzRlODBiNWFlZA=="></a>-->
+
+                                <a class="linkedinIconModal fa fa-lg fa-linkedin iconStyle"
+                                    href="http://www.linkedin.com/in/april-villeda-roblero-186713202"></a>
+                                <!--                    <a class="mailIconModal fa fa-envelope-o fa-2x" href="mailto:av9401@uncw.edu"></a>-->
+                                <a class="fa fa-lg fa-envelope iconStyle" href="mailto:av9401@uncw.edu"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="alvaroPOPUP" class="modaloverlay">
+                <div class="modalstyles">
+                    <!--try to keep everything here-->
+                    <img class="imgSizingonCard" src="images/AJsanchez.jpg" alt="Vice President Alvaro Picture"
+                        loading="lazy">
+                    <a class="closemodal" href="#alvaroPOPUP"></a>
+                    <div class="modalcontent">
+                        <div>
+                            <h2 class="titleModal">Alvaro Sanchez</h2>
+                            <p class="roleModal">Vice President / Web Development Lead</p>
+                        </div>
+                        <div class="showDesktop">
+                            Born in Wilmington, NC, with proud Mexican roots, Alvaro is currently pursuing a degree in
+                            Computer Science with a concentration in Biology. He is deeply passionate about technology
+                            and constantly seeks to expand his knowledge in this field. His journey began with video
+                            editing, which eventually led him to programming. In his free time, Alvaro enjoys studying
+                            and assisting his classmates with their studies. His ultimate aspiration is to contribute to
+                            the world of technology in any capacity. He is driven by his desire to repay his parents for
+                            their sacrifices.
+                        </div>
+                        <div class="showPhone">
+
+                            Alvaro, born in Wilmington, NC, with proud Mexican roots, is pursuing a Computer Science
+                            degree with a Biology concentration. His passion for tech began with video editing and now
+                            extends to programming. He aspires to contribute to the tech world, driven by a desire to
+                            repay his parents' sacrifices. Alvaro's dedication goes beyond academics, with hobbies like
+                            playing with his dog Paris and photography.
+                        </div>
+                        <div class="showDesktop">
+                            Alvaro's dedication extends beyond academics, with hobbies like playing with his dog Paris
+                            and photography. </div>
+
+
+
+
+                        <div class="logos borderForModal ">
+                            <!--                  maybe will need to put the icons to be absolute-->
+                            <div class=" socialbtns">
+                                <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                                <!--    <a class="mailIconModal fa fa-envelope-o fa-2x" href="https://instagram.com/futurosenstem?igshid=MzRlODBiNWFlZA=="></a>-->
+
+                                <a class="linkedinIconModal fa fa-lg fa-linkedin iconStyle"
+                                    href="https://www.linkedin.com/in/sanchez9261/"></a>
+                                <a class="fa fa-lg fa-envelope iconStyle" href="mailto:ajs1696@uncw.edu"></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="DaniMPOPUP" class="modaloverlay">
+                <div class="modalstyles">
+                    <!--try to keep everything here-->
+                    <img class="imgSizingonCard" src="images/Daniel(U).jpg" alt="Financial Advisor Daniel Picture"
+                        loading="lazy">
+                    <a class="closemodal" href="#DaniMPOPUP"></a>
+                    <div class="modalcontent">
+                        <div>
+                            <h2 class="titleModal">Daniels Mendoza-Perez</h2>
+                            <p class="roleModal">Financial Advisor</p>
+                        </div>
+
+
+
+                        <div class="showDesktop">
+                            Originally from Clayton, NC, with proud Mexican heritage, he is a Business major
+                            specializing in Management Information Systems (MIS). His interest in MIS stems from its
+                            unique blend of computer science and business insights, offering a powerful toolset for
+                            optimizing business processes. He aspires to contribute to informed decision-making by
+                            delving into the technical aspects of database management. Ultimately, he aims to be a
+                            valuable asset, using MIS principles to elevate a company's overall performance.
+                        </div>
+                        <div class="showPhone">
+                            A Business major from Clayton, NC, with Mexican heritage, specializing in Management
+                            Information Systems (MIS). MIS combines computer science and business, optimizing business
+                            processes. He aims to contribute to informed decision-making by understanding database
+                            management. Inspired by his entrepreneurial parents, he's often found at the Recreation
+                            Center, where everyone is welcome.
+                        </div>
+                        <div class="showDesktop">
+                            <!--                Interesting fact:-->
+                            His entrepreneurial parents inspired his business pursuits. Catch him at the Recreation
+                            Center, where there's something for everyone. Stop by and say hi!
+                        </div>
+
+
+                        <div class="logos borderForModal">
+                            <!--                  maybe will need to put the icons to be absolute-->
+                            <div class="socialbtns">
+                                <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                                <a class="linkedinIconModal fa fa-lg fa-linkedin iconStyle"
+                                    href="https://www.linkedin.com/in/daniel-mendoza-perez/"></a>
+                                <a class="fa fa-lg fa-envelope iconStyle" href="mailto:dm8640@uncw.edu"></a>
+                            </div>
+                        </div>
+
+
+
+                        <!--            content here-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="JadePOPUP" class="modaloverlay">
+            <div class="modalstyles">
+                <!--try to keep everything here-->
+                <img class="imgSizingonCard" src="images/araceliMaturino.jpg"
+                    alt="Social Media Coordinator Cheli Picture" loading="lazy">
+                <a class="closemodal" href="#JadePOPUP"></a>
+                <div class="modalcontent">
+                    <div>
+                        <h2 class="titleModal">Jade Maturino</h2>
+                        <p class="roleModal">Social Media Coordinator</p>
+                    </div>
+
+                    <div>
+                        info here </div>
+                    <div>
+                        <!--                Interesting fact:-->
+                        more info
+                    </div>
+                    <div>
+                        Contact Info:
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="LesliePOPUP" class="modaloverlay">
+            <div class="modalstyles">
+                <!--try to keep everything here-->
+                <img class="imgSizingonCard" src="images/newLesliePicture.jpg"
+                    alt="Social Media Coordinator Leslie Picture" loading="lazy">
+                <a class="closemodal" href="#LesliePOPUP"></a>
+                <div class="modalcontent">
+                    <div>
+                        <h2 class="titleModal">Leslie Sanchez</h2>
+                        <p class="roleModal">Social Media Coordinator</p>
+                    </div>
+
+
+                    <div class="showDesktop">
+                        Clayton-raised Leslie, empowered by her Mexican heritage, dives into public health (pre-clinical
+                        studies) with Spanish and Biology minors. A Health & Equity Bonner Fellow, she interns at a
+                        Wilmington charity, her empathy shining through her Nursing Assistant II certification.
+                        Volunteering fuels her spirit, just like skydiving and mud-riding! Driven to become a Pediatric
+                        MD, Leslie combats Adverse Childhood Experiences, aiming to make a lasting impact on children
+                        and families.
+                    </div>
+                    <div class="showPhone">
+                        Leslie, a Clayton native, is a pre-clinical studies major with Spanish and Biology minors,
+                        driven by her Mexican heritage. As a Health & Equity Bonner Fellow, she interns at a Wilmington
+                        charity, and her empathy shines through her Nursing Assistant II certification. Volunteering
+                        fuels her spirit, just like skydiving and mud-riding! Driven to become a Pediatric MD, Leslie
+                        combats Adverse Childhood Experiences, aiming to make a lasting impact on children and families.
+                    </div>
+                    <div class="showDesktop">
+                        Leslie not only enjoys serving her community, but also relishes adrenaline-pumping adventures
+                        like skydiving and mud-riding!
+                    </div>
+
+                    <div class="logos borderForModal">
+                        <!--                  maybe will need to put the icons to be absolute-->
+                        <div class="socialbtns">
+                            <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                            <!--    <a class="linkedinIconModal fa fa-lg fa-linkedin iconStyle" href="https://www.linkedin.com/in/daniel-mendoza-perez/"></a>-->
+                            <a class="fa fa-lg fa-envelope iconStyle" href="mailto:ls6777@uncw.edu"></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="AyanniPOPUP" class="modaloverlay">
+            <div class="modalstyles">
+                <!--try to keep everything here-->
+                <img class="imgSizingonCard" src="images/yanni(U).jpg" alt="Secretary Ayanni Picture" loading="lazy">
+                <a class="closemodal" href="#AyanniPOPUP"></a>
+                <div class="modalcontent">
+                    <div>
+                        <h2 class="titleModal">Ayanni Reese</h2>
+                        <p class="roleModal">Secretary</p>
+                    </div>
+
+
+                    <div class="showDesktop">
+                        Raleigh-raised Ayanni, deeply rooted in both Virginia Beach and Afro-Native heritage, pursues
+                        Public Health (Community & Global) with a Medical Humanities minor. Driven by social justice,
+                        Ayanni aim to become a healthcare administrator, tackling healthcare disparities for women of
+                        color and immigrant families. A Dean's List scholar and Nancy Loyce Phelps Hodges Scholarship
+                        recipient, Ayanni's 18 years of dance fuel a vibrant personality.
+                    </div>
+                    <div class="showPhone">
+                        Ayanni, a Raleigh native with Afro-Native heritage from Virginia Beach, studies Public Health
+                        (Community & Global) with a Medical Humanities minor. Driven by social justice, Ayanni aims to
+                        become a healthcare administrator, tackling disparities for women of color and immigrant
+                        families. A Dean's List scholar and Nancy Loyce Phelps Hodges Scholarship recipient, Ayanni's 18
+                        years of dance fuel a vibrant personality. Ayanni also find solace in literature and express
+                        their creativity through crafting. </div>
+                    <div class="showDesktop">
+                        Ayanni also finds solace and joy in the world of literature and expresses their creativity
+                        through various crafting endeavors.
+                    </div>
+
+                    <div class="logos borderForModal">
+                        <!--                  maybe will need to put the icons to be absolute-->
+                        <div class="socialbtns">
+                            <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                            <!--    <a class="linkedinIconModal fa fa-lg fa-linkedin iconStyle" href="https://www.linkedin.com/in/daniel-mendoza-perez/"></a>-->
+                            <a class="fa fa-lg fa-envelope iconStyle" href="mailto:arh2182@uncw.edu"></a>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="DanielCPOPUP" class="modaloverlay">
+            <div class="modalstyles">
+                <!--try to keep everything here-->
+                <img class='imgSizingonCard' src="images/danielCortazar.jpg"
+                    alt="Web Developer Administrator Daniel Picture" loading="lazy">
+                <a class="closemodal" href="#DanielCPOPUP"></a>
+                <div class="modalcontent">
+                    <div>
+                        <h2 class="titleModal">Daniel Cortazar</h2>
+                        <p class="roleModal">Web Dev Administrator</p>
+                    </div>
+
+                    <div>
+                        info here </div>
+                    <div>
+                        <!--                Interesting fact:-->
+                        more info
+                    </div>
+                    <div>
+                        Contact Info:
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="JuanPOPUP" class="modaloverlay">
+            <div class="modalstyles">
+                <!--try to keep everything here-->
+                <img class="imgSizingonCard" src="images/juanZuluaga.jpg" alt="Vice President Alvaro">
+                <a class="closemodal" href="#JuanPOPUP"></a>
+                <div class="modalcontent">
+                    <div>
+                        <h2 class="titleModal">Juan Zuluaga</h2>
+                        <!--                can make it differnt color for the word mentor to add emphasis-->
+                        <p class="roleModal">Mentor</p>
+                    </div>
+
+                    <div>
+                        info here </div>
+                    <div>
+                        <!--                Interesting fact:-->
+                        more info
+                    </div>
+                    <div>
+                        Contact Info:
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="YesmariePOPUP" class="modaloverlay">
+            <div class="modalstyles">
+                <!--try to keep everything here-->
+                <img class="imgSizingonCard" src="images/yesmarieDeLaFlor.jpg" alt="Vice President Alvaro">
+                <a class="closemodal" href="#YesmariePOPUP"></a>
+                <div class="modalcontent">
+                    <div>
+                        <h2 class="titleModal">Yesmarie De La Flor</h2>
+                        <!--                can make it differnt color for the word mentor to add emphasis-->
+                        <p class="roleModal">Mentor</p>
+                    </div>
+
+                    <div>
+                        info here </div>
+                    <div>
+                        <!--                Interesting fact:-->
+                        more info
+                    </div>
+                    <div>
+                        Contact Info:
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end of modals-->
+
+
+    </div>
+
+    <div class="card-container">
+
+        <!--        can make the cards hover and not make them a link on click-->
+        <div class="card" id="javiCard">
+            <a class="button open-modal" href="#javiPOPUP">
+                <img src="images/FJmorales.jpg" alt="Co President Javier Picture" loading="lazy">
+            </a>
+            <div class="card-info">
+                <a class="button open-modal" href="#javiPOPUP">
+                <h6>Javier Morales</h6>
+                </a>
+                <span>Co President</span>
+                
+                <div class="social-icon">
+                    <br>
+                    <a class="button open-modal" href="#javiPOPUP">
+                        <p>ABOUT</p>
+                    </a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="card" id="aprilCard">
+            <a class="button" href="#aprilPOPUP">
+                <img src="images/Avilleda.jpg" alt="Co President Abril Picture" loading="lazy">
+            </a>
+            <div class="card-info">
+                <a class="button" href="#aprilPOPUP">
+                <h6>April Villeda</h6>
+                </a>
+                <span>Co President</span>
+                
+                <div class="social-icon">
+                    <br>
+                    <a class="button" href="#aprilPOPUP">
+                        <p>ABOUT</p>
+                    </a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="sanchezCard">
+            <a class="button open-modal" href="#alvaroPOPUP">
+                <img src="images/AJsanchez.jpg" alt="Vice President Alvaro Picture" loading="lazy">
+            </a>
+            <div class="card-info">
+                <a class="button open-modal" href="#alvaroPOPUP">
+                <h6>Alvaro Sanchez</h6>
+                </a>
+                <span>Vice President / Web Development Lead</span>
+                
+                <br>
+                <div class="social-icon">
+                    <a class="button open-modal" href="#alvaroPOPUP">
+                        <p>ABOUT</p>
+                    </a>
+                    <div class="socialbtns">
+                        <ul>
+                            <!--<li><a href="#" class="fa fa-lg fa-facebook"></a></li>-->
+                            <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                            <!--    <li><a id="alvaroIconInsta" href="https://instagram.com/futurosenstem?igshid=MzRlODBiNWFlZA==" class="fa fa-lg fa-instagram centerICON"></a></li>-->
+                            <!--    <li><a id="alvaroIconLinkin" href="https://www.linkedin.com/company/futuros-en-stem/" class="fa fa-lg fa-linkedin centerICON"></a></li>-->
+                            <!--<li><a href="#" class="fa fa-lg fa-youtube"></a></li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="danielCard">
+            <a class="button open-modal" href="#DaniMPOPUP">
+                <img src="images/Daniel(U).jpg" alt="Financial Advisor Daniel Picture" loading="lazy">
+            </a>
+            <div class="card-info">
+                <a class="button open-modal" href="#DaniMPOPUP">
+                <h6>Daniel Mendez-Perez</h6>
+                </a>
+                <span>Financial Advisor</span>
+                
+                <div class="social-icon">
+                    <br>
+                    <a class="button open-modal" href="#DaniMPOPUP">
+                        <p>ABOUT</p>
+                    </a>
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!--<div class="card" id="jadeCard">-->
+        <!--    <a class="button open-modal" href="#JadePOPUP">-->
+        <!--    <img  src="images/araceliMaturino.jpg" alt="Social Media Coordinator Cheli Picture" loading="lazy">-->
+        <!--    </a>-->
+        <!--        <div class="card-info">-->
+        <!--            <h6>Araceli Maturino</h6>-->
+        <!--            <span>Social Media Coordinator</span>-->
+        <!--            <div class="social-icon">-->
+        <!--                                <br>-->
+        <!--                <a class="button open-modal" href="#JadePOPUP">-->
+        <!--                <p>ABOUT</p>-->
+        <!--                </a>-->
+
+        <!--                <br>-->
+        <!--                <br>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--</div>-->
+
+        <div class="card" id="leslieCard">
+            <a class="button open-modal" href="#LesliePOPUP">
+                <img src="images/newLesliePicture.jpg" alt="Social Media Coordinator Leslie Picture" loading="lazy">
+            </a>
+            <div class="card-info">
+                <a class="button open-modal" href="#LesliePOPUP">
+                <h6>Leslie Sanchez</h6>
+                </a>
+                <span>Social Media Coordinator</span>
+                
+                <div class="social-icon">
+                    <br>
+                    <a class="button open-modal" href="#LesliePOPUP">
+                        <p>ABOUT</p>
+                    </a>
+
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="ayanniCard">
+            <a class="button open-modal" href="#AyanniPOPUP">
+                <img src="images/yanni(U).jpg" alt="Secretary Ayanni Picture" loading="lazy">
+            </a>
+            <div class="card-info">
+                <a class="button open-modal" href="#AyanniPOPUP">
+                <h6>Ayanni Reese</h6>
+                </a>
+                <span>Secretary</span>
+                
+                <div class="social-icon">
+                    <br>
+                    <a class="button open-modal" href="#AyanniPOPUP">
+                        <p>ABOUT</p>
+                    </a>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <!--Z-->
+
+
+    </div>
+
+    <!--<div class="container">-->
+
+    <!--<h4>Meet Our <span style="color: #4169E1">Mentors</span></h4>-->
+
+    <!--&lt;!&ndash;can ask them to use calendy link to set up individual meetings&ndash;&gt;-->
+
+    <!--    <div class="card-container">-->
+
+    <!--<div class="card" id="juanCard">-->
+    <!--    <a class="button open-modal" href="#JuanPOPUP">-->
+    <!--    <img  src="images/juanZuluaga.jpg" alt="Vice President Alvaro">-->
+    <!--    </a>-->
+    <!--        <div class="card-info">-->
+    <!--            <h6>Juan Zuluaga</h6>-->
+    <!--            <span class="mentorColor">Mentor</span>-->
+    <!--            <div class="social-icon">-->
+    <!--                <br>-->
+    <!--                <a class="button open-modal" href="#JuanPOPUP">-->
+    <!--                <p>ABOUT</p>-->
+    <!--                </a>-->
+    <!--                <br>-->
+    <!--                <br>-->
+    <!--        </div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="card" id="yesmarieCard">-->
+    <!--    <a class="button open-modal" href="#YesmariePOPUP">-->
+    <!--    <img  src="images/yesmarieDeLaFlor.jpg" alt="Vice President Alvaro">-->
+    <!--    </a>-->
+    <!--        <div class="card-info">-->
+    <!--            <h6>Yesmarie De La Flor</h6>-->
+    <!--            <span class="mentorColor">Mentor</span>-->
+    <!--            <div class="social-icon">-->
+    <!--                <br>-->
+    <!--                <a class="button open-modal" href="#YesmariePOPUP">-->
+    <!--                <p>ABOUT</p>-->
+    <!--                </a>-->
+    <!--                <br>-->
+    <!--                <br>-->
+    <!--        </div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+
+
+    <!--</div>-->
+    <!--</div>-->
+
+
+
+    </div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+</body>
+
+<footer>
+    <div id="logosFooter">
+        <div class="socialbtns">
+            <ul>
+                <!--<li><a href="#" class="fa fa-lg fa-facebook"></a></li>-->
+                <!--<li><a href="#" class="fa fa-lg fa-github"></a></li>-->
+                <li><a id="instaIconFooter" href="https://instagram.com/futurosenstem?igshid=MzRlODBiNWFlZA=="
+                        class="fa fa-lg fa-instagram"></a></li>
+                <li><a id="linkedinIconFooter" href="https://www.linkedin.com/company/futuros-en-stem/"
+                        class="fa fa-lg fa-linkedin"></a></li>
+                <!--<li><a href="#" class="fa fa-lg fa-youtube"></a></li>-->
+            </ul>
+        </div>
+    </div>
+
+
+    <span style="color: #393E46">
+        &copy;Copyright 2023 <br>
+        All rights reserved
+    </span>
+
+    <!--always to be put at the end-->
+    <script src="script.js"> </script>
+</footer>
+
+</html>
